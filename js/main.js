@@ -1,8 +1,5 @@
 
 
-
-resizer();
-
 window.onresize = resizer;
 
 function resizer () {	

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Sidebar</title>
+  <title>Dynamic Sidebar</title>
   <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
-<body id ='body'>
+<body id='body' onload="resizer();">
 <div class="wrapper">
 	
 	<header id="header">
@@ -35,10 +35,9 @@
 	<article>
 		<h1>The dynamic sidebar</h1>
 		<h2>How it works</h2>
-		<p>Sidebars are often used in blogs, forums or wikis. One of the main design-trends is to have a sidebar that is consistent width height as the article on the side or main content. In order for it to stay consistent it needs to have the same height as the article content, and the article it self. An usual fix for that is to put the height to 100 percent viewport height or 100% on the height in css. And make it positioned fixed, to tag a long the article. However that doesn't fix the fact, if the sidebar-content are longer than the article or if the article content is heigher than the viewportheight.</p>
+		<p>Sidebars are often used in blogs, forums or wikis. One of the main design-trends is to have a sidebar that has consistent width and height same as the article and it's content. the usual fix for that is to make set the height to 100vh(viewport height) or 100% on the height in css. You can positioned it fixed to allways stay reachable when schrolling down. However some problems that can occur are if the sidebar-content are longer than the article it self or the article content is heigher than the viewportheight. That would cause an unnescesary schrollbar in the sidebar. Of course there is allways &quot;overflow hidden &quot;, but it's going to hide information, you'd want to be able to display in the sidebar.</p>
 	 <h2>The trick</h2>
-	 <p>
-	Excepteur sequi vitae ad molestiae so architecto. Nulla minim for tempor aliquip or ad exercitationem yet nostrud. Mollit do. Suscipit modi, but quam for modi, suscipit. Nequeporro ratione yet voluptas so ea rem so velit. Et et, so elit. Nequeporro mollit. Minima occaecat laboriosam or fugiat eaque yet illum for ullamco. Magnam mollit vel or laudantium amet nulla architecto. Nostrud perspiciatis sequi nulla inventore for eum et. Beatae sunt or beatae, aut so veniam do minim. Minima aliquip. Unde quae exercitationem eu mollit yet officia. Amet. Veritatis. Dolores rem. Incidunt labore yet ullam and id, so laudantium. Excepteur. Aut enim and ullamco sunt or incidunt so aspernatur. In. Commodo ullam and nequeporro. 
+	 <p>asdasd  
 	 <br><br>
 	Dolorem nihil, consequuntur for quo. Beatae labore nihil yet veritatis and nostrum inventore and dolore. Ratione id or laborum, minima culpa or anim. Eiusmod ipsum but sint yet iure so laborum or consequat. Non consectetur for adipisci, for quasi. Commodi incidunt. Quis id. 
 	 <br><br>
@@ -48,7 +47,11 @@
 	 <br><br>
 	Ex voluptatem illo accusantium. Laudantium beatae. Dolores. Lorem sint so minima consequatur. Eius omnis but nihil fugiat but consectetur autem and quam. Nesciunt veritatis aperiam, yet quaerat yet quae. Adipisci. Pariatur deserunt mollit for pariatur, mollit yet exercitation laborum. Tempor. Quaerat. Eius suscipit and illum. Anim. Est occaecat non laboris but qui so sint. Aliquip adipisicing consequat. Inventore quia or id cupidatat illo. Et ipsam, or dolore for consequatur yet nesciunt. Velitesse pariatur. Aut nihil duis. Ullamco laudantium for non. Consectetur ratione. Quasi aliquam for cillum yet voluptas for magni. Voluptas. Eaque. Odit. 
 	 <br><br>
+	Minima error and do vitae. Qui. Modi aperiam for elit eu, yet laudantium so nostrud. Nulla enim so autem autem so aperiam. Iure ullam. Ab eaque odit quaerat yet deserunt for minim. Officia. Excepteur. Vel. Quae velitesse, si yet esse voluptatem. Ut. Ab beatae or deserunt or dolore for non for perspiciatis. Nesciunt ipsum but ipsam for sint but iste. Lorem. Ipsum non or perspiciatis. Ut sunt so laboriosam. Commodi. Nisi eiusmod veniam officia ipsum laboris. Ullamco dolores. Nequeporro voluptatem. Sed qui but adipisci.
+
+	 <br><br>
 	Minima error and do vitae. Qui. Modi aperiam for elit eu, yet laudantium so nostrud. Nulla enim so autem autem so aperiam. Iure ullam. Ab eaque odit quaerat yet deserunt for minim. Officia. Excepteur. Vel. Quae velitesse, si yet esse voluptatem. Ut. Ab beatae or deserunt or dolore for non for perspiciatis. Nesciunt ipsum but ipsam for sint but iste. Lorem. Ipsum non or perspiciatis. Ut sunt so laboriosam. Commodi. Nisi eiusmod veniam officia ipsum laboris. Ullamco dolores. Nequeporro voluptatem. Sed qui but adipisci. 
+ 
 
 	</p>
 		
@@ -56,7 +59,6 @@
 	</main>
 	
 </div>
-	<footer></footer>
 	<script src="js/main.js"></script>
 </body>
 </html>

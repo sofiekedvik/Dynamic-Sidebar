@@ -1,4 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic);
+
+
 * {
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	 box-sizing: border-box;
 	margin: 0 auto;
@@ -62,6 +66,10 @@ body {
 	margin-bottom:20px;
 }
 
+.developer a:hover{
+	color: white;
+}
+
 .developer p {
 	text-align:center;
 	color: #6ECDEB;
@@ -79,15 +87,15 @@ body {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	/*background: #3F9DA1;*/
 
 }
 
 a {
-	text-decoration: nones;
+	text-decoration: none;
 }
 
 nav {
+	font-family: 'Open Sans', sans-serif;
 	background-color:#32313A;
 	padding-bottom: 40px;
 }
@@ -113,6 +121,7 @@ ul li:hover {
 
 
 h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
 	margin-bottom:10px;
 	font-weight:300;
 }
@@ -148,11 +157,17 @@ input[type=checkbox] {
 }
 
 article {
-	margin:0;
+	margin:0 auto;
 	padding: 40px;
 	width:70%;
 	background: white;
 	border: 1px solid #DCDCDC;
+}
+
+article p {
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -161,28 +176,46 @@ article {
 	#header {
 		margin:0;
 		top:0;
-		width:100%;
-			
+		width:100%;	
 		}
 
-	article {
-		padding:40px;
+
+
+	#main{
 		width:100%;
-		
+		padding:20px;	
 	}
 
-	ul{
-		display:none;
-		height: 0;
-		-webkit-transition: all 0.5s ease-in;
-		transition: all 0.5s ease-in;
+	article {
+		margin: 0 auto;
+		margin-left:10px;
+		padding:40px;
+		width:100%;
+		float:none;	
+	}
+
+	nav {
+		width:100%;
+		overflow:hidden;
+		padding:0px 0;
+}
+
+	ul {
+		max-height: 0px;
+		-webkit-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+		margin-top:-30px;
+		padding:0;
+		
+		
 	}
 
 	label {
 		color: white;
-		margin-left: 30px;
-		margin-top:-30px;
+		margin-left:30px;
+		margin-top:-8px;
 		font-size: 50px;
+		padding-bottom:20px;
 		display:inline-table;
 		-webkit-transition: all 0.5s ease-in;
 		transition: all 0.5s ease-in;
@@ -193,11 +226,10 @@ article {
 	}
 
 	input[type=checkbox]:checked ~ ul {
-		display:block;
-		height: auto;
+		
+		padding-bottom:20px;
+		max-height: 300px;
 	}
-
-
 
 	#main {
 		padding-left:0;
