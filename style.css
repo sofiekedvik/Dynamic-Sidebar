@@ -13,6 +13,7 @@ body {
 	height: 100%;
 	font-family: helvetica, sans-serif;
 	line-height: 1.5;
+	background: #E7E7E7;
 	
 }
 
@@ -90,32 +91,51 @@ body {
 
 }
 
+.wiki {
+
+}
+
+.hide{
+	display:none;
+}
+
+.show{
+	display: block;
+}
+
 a {
 	text-decoration: none;
+	color:white;
 }
 
 nav {
 	font-family: 'Open Sans', sans-serif;
 	background-color:#32313A;
-	padding-bottom: 40px;
 }
 
 ul {
 	width:100%;
 	list-style-type: none;
-	padding-top:30px;
+	padding:20px;
 }
 
 ul li {
+	width:100%;
 	padding-top:10px;
 	color: white;
 	font-size: 20px;
-	width:150px;
+	
 }
 
 ul li:hover {
 	color:#6ECDEB;
 	cursor: pointer;
+}
+
+li {
+	background-image: url("iconarrow.png") ;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
 }
 
 
@@ -151,7 +171,6 @@ input[type=checkbox] {
 
 #main {
 	width:80%;
-	background: #E7E7E7;
 	float:right;
 	padding:40px;
 }

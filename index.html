@@ -22,12 +22,42 @@
 		<input type="checkbox" id="toggleme">
 		<label for="toggleme">+</label>
 			<ul>		
-				<li>Home</li>
-				<li>Portfolio</li>
-				<li>About me</li>
-				<li>Blog</li>
-				<li>Contact</li>
+				<li class="wiki">Home</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
+				<li class="wiki">Portfolio</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
+				<li class="wiki">About me</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
+				<li class="wiki">Blog</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
+				<li class="wiki">Contact</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
 				<li>FAQ</li>
+					<ul class="hide">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">FaQ</a></li>
+					</ul>
 			</ul>
 		</nav>
 	</header>
@@ -35,10 +65,14 @@
 	<article>
 		<h1>The dynamic sidebar</h1>
 		<h2>How it works</h2>
-		<p>Sidebars are often used in blogs, forums or wikis. One of the main design-trends is to have a sidebar that has consistent width and height same as the article and it's content. the usual fix for that is to make set the height to 100vh(viewport height) or 100% on the height in css. You can positioned it fixed to allways stay reachable when schrolling down. However some problems that can occur are if the sidebar-content are longer than the article it self or the article content is heigher than the viewportheight. That would cause an unnescesary schrollbar in the sidebar. Of course there is allways &quot;overflow hidden &quot;, but it's going to hide information, you'd want to be able to display in the sidebar.</p>
+		<p>Sidebars are often used in blogs, forums or wikis. One of the main design-trends that never go wrong, is to have a sidebar that has consistent height same as the article and it's content. The usual fix for that is to set the height to 100vh(viewport height) or 100% on the height in css. You can position it fixed to allways stay reachable when schrolling down. However, some problems that can occur are if the sidebar-content are longer than the article it self or the article content is heigher than the viewportheight. That would cause an unnescesary schrollbar on the sidebar. Of course there is allways &quot;overflow hidden&quot;, but it's going to hide information you'd want to be able to display in the sidebar.</p>
 	 <h2>The trick</h2>
-	 <p>asdasd  
-	 <br><br>
+	 <p>There are probebly many solutions for this, but mine are to target the height on the article container with help of Javascript. To make the sidebar contain the same height on window resize the function is simply called again on window.resize. </p>
+	  <h2>Fixed bug issue</h2> 
+	 <p> when loading fonts from a cdn such as google fonts, it take some time to load in, and therefore the script loads to fast. The key is to use body onload and call the function from there and load the cdn in the stylesheet. That will prevent the script to load in before the font has been loaded in to the document. </p>
+	  <h2>Some example text</h2> 
+	<p>To give the right look that thhis method works, here are some lorum ipsum text 
+	<br><br>
 	Dolorem nihil, consequuntur for quo. Beatae labore nihil yet veritatis and nostrum inventore and dolore. Ratione id or laborum, minima culpa or anim. Eiusmod ipsum but sint yet iure so laborum or consequat. Non consectetur for adipisci, for quasi. Commodi incidunt. Quis id. 
 	 <br><br>
 	Laboriosam aut so incidunt for quisquam pariatur. Omnis aliqua or eius accusantium. Inventore explicabo dolore or sint or do ex adipisci. Velit. Consectetur tempor yet nisi. Odit cillum yet eu est aperiam. Amet laboriosam and beatae ratione aliquid and deserunt. Architecto dolor or eaque voluptatem. Quia cillum for dicta, so unde. Accusantium corporis but totam or quo, eius unde beatae. Dicta architecto commodi modi. Magni est so error dicta architecto. Eius unde or dicta or exercitationem for exercitationem. Vel consequatur yet nequeporro so eum. Ex quasi, illum, quia. Quaerat ipsum. Adipisicing ea, or cillum do but exercitationem. Natus anim so quae and laborum so aliquam proident adipisicing. Dolorem amet and labore so nesciunt. Ut dicta dolor. Quam aliquip et. Aute numquam so omnis illum, quo so proident but aperiam. 
