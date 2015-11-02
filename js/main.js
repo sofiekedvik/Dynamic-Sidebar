@@ -1,33 +1,29 @@
-var newHeight, mainNavItem, NavItem;
+var newHeight, mainNavItem, NavItem, main;
 mainNavItem = document.getElementsByClassName("wiki");
 NavItem = document.getElementsByClassName("hide");
-
-// for(var i = 0; i < mainNavItem.length; i++){
-// 	mainNavItem[i].addEventListener("click", function(){
-// 		for(var j = 0; j < NavItem.length; j++){
-// 			NavItem[j].classList.toggle("hide");
-// 		}
-// 	});
-// }
 
 window.onresize = resizer;
 
 function resizer () {	
-	
+	main = document.getElementById('main');
 	if (window.innerWidth > 1024) {
-		var main = document.getElementById('main');
 		newHeight = main.offsetHeight;	
-		document.getElementById('header').setAttribute('style', 'height:' + newHeight + "px");
+		document.getElementById('aside').setAttribute('style', 'height:' + newHeight + "px");
 		
 	} else{
-		var main = document.getElementById('main');
-		document.getElementById('header').setAttribute('style', 'height:' + "auto");
+		document.getElementById('aside').setAttribute('style', 'height:' + "auto");
 	}
 
 }	
 
-console.log(newHeight);
-console.log(main);
-
-
+MenuHandler();
+function MenuHandler () {
+	for(var i = 0; i < mainNavItem.length; i++){
+		mainNavItem[i].addEventListener("click", function(){
+			this.childNodes[1].classList.toggle("hide");
+			this.classList.toggle("imageflip");
+		});
+	}
+	
+}
 

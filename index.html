@@ -9,7 +9,7 @@
 <body id='body' onload="resizer();">
 <div class="wrapper">
 	
-	<header id="header">
+	<aside id="aside">
 	<div class="logo">
 		<h2>Dynamic Sidebar</h2>
 		<div class="profilePicture"></div>
@@ -22,56 +22,53 @@
 		<input type="checkbox" id="toggleme">
 		<label for="toggleme">+</label>
 			<ul>		
-				<li class="wiki">Home</li>
+				<li class="wiki">Portfolio
 					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
+						<li><a href="#">Programming</a></li>
+						<li><a href="#">Graphics</a></li>
 					</ul>
-				<li class="wiki">Portfolio</li>
+				</li>
+				<li class="wiki">About me
 					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
+						<li><a href="#">Website</a></li>
+						<li><a href="#">Bio</a></li>
+						<li><a href="#">CV</a></li>
 					</ul>
-				<li class="wiki">About me</li>
+				</li>
+				<li class="wiki">Blog
 					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
+						<li><a href="#">Fundamentals of Webdesign</a></li>
+						<li><a href="#">Positions and graphics</a></li>
+						<li><a href="#">Frontend librarys</a></li>
 					</ul>
-				<li class="wiki">Blog</li>
+				</li>
+				<li class="wiki">Contact
 					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
+						<li><a href="#">For hire</a></li>
+						<li><a href="#">Public events</a></li>
 					</ul>
-				<li class="wiki">Contact</li>
+				</li>
+				<li class="wiki">FAQ
 					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
+						<li><a href="#">Usage</a></li>
+						<li><a href="#">Add new features</a></li>
+						<li><a href="#">Collaboration</a></li>
 					</ul>
-				<li>FAQ</li>
-					<ul class="hide">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">FaQ</a></li>
-					</ul>
+				</li>
 			</ul>
 		</nav>
-	</header>
+	</aside>
 	<main id= "main">
 	<article>
 		<h1>The dynamic sidebar</h1>
 		<h2>How it works</h2>
-		<p>Sidebars are often used in blogs, forums or wikis. One of the main design-trends that never go wrong, is to have a sidebar that has consistent height same as the article and it's content. The usual fix for that is to set the height to 100vh(viewport height) or 100% on the height in css. You can position it fixed to allways stay reachable when schrolling down. However, some problems that can occur are if the sidebar-content are longer than the article it self or the article content is heigher than the viewportheight. That would cause an unnescesary schrollbar on the sidebar. Of course there is allways &quot;overflow hidden&quot;, but it's going to hide information you'd want to be able to display in the sidebar.</p>
+		<p>Sidebars are often used in blogs, forums and wikis. One of the main design trends that is to have a sidebar that has consistent height same as the article and it's content. The usual fix for that is to set the height to 100vh(viewport height) or 100% on the height in css. You can position it fixed to allways stay reachable when schrolling down. However, some problems that can occur are if the sidebar-content are longer than the article it self or the article content is heigher than the viewportheight. That would cause an unnescesary schrollbar on the sidebar. Of course there is allways &quot;overflow hidden&quot;, but it's going to hide some of the information you'd want to be able to display in the sidebar.</p>
 	 <h2>The trick</h2>
-	 <p>There are probebly many solutions for this, but mine are to target the height on the article container with help of Javascript. To make the sidebar contain the same height on window resize the function is simply called again on window.resize. </p>
+	 <p>There are probebly many solutions to solve this issue, but in this example we are targetting the height on the article container with some help of Javascript. To make the sidebar contain the same height on diffrent sizes of the vendor window, the function is simply called again on window.resize. </p>
 	  <h2>Fixed bug issue</h2> 
-	 <p> when loading fonts from a cdn such as google fonts, it take some time to load in, and therefore the script loads to fast. The key is to use body onload and call the function from there and load the cdn in the stylesheet. That will prevent the script to load in before the font has been loaded in to the document. </p>
+	 <p> when loading fonts from a cdn such as google fonts, it adds some loading time and the Javascript file may load in faster. This causes the script getting the height of the article before the new font is loaded, and therefore can miss a few pixels depending on the height of the font, a glitch may appear at the bottom of the sidebar. To prevent this we can use the onload function on the bodytag and load the cdn through the stylesheet instead.</p>
 	  <h2>Some example text</h2> 
-	<p>To give the right look that thhis method works, here are some lorum ipsum text 
+	<p>To give the right look that this method works, here are some lorum ipsum text to give the article some lenght.
 	<br><br>
 	Dolorem nihil, consequuntur for quo. Beatae labore nihil yet veritatis and nostrum inventore and dolore. Ratione id or laborum, minima culpa or anim. Eiusmod ipsum but sint yet iure so laborum or consequat. Non consectetur for adipisci, for quasi. Commodi incidunt. Quis id. 
 	 <br><br>
